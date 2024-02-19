@@ -3,73 +3,71 @@
 /**************************/
 
 @media (max-width: 34em) {
-  .hero-title {
-    h1 {
-      font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    .hero-description {
-      font-size: 1.2rem;
-    }
+  .hero-description {
+    font-size: 1.2rem;
+  }
 
-    .hero-name {
-      font-size: 1.6rem;
-    }
+  .hero-name {
+    font-size: 1.6rem;
+  }
 
-    .hero-img {
-      height: 8rem;
-    }
+  .hero-img {
+    height: 8rem;
+  }
 
-    .underline {
-      width: 32rem;
-    }
+  .underline {
+    width: 32rem;
+  }
 
-    .hero-img {
-      height: 8rem;
-    }
+  .hero-img {
+    height: 8rem;
+  }
 
-    .heading-secondary {
-      font-size: 2.5rem;
-    }
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
 
-    .services-container {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem rem;
-    }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
 
-    .projects-container {
-      display: flex;
-      flex-direction: column;
-      gap: 5rem;
-    }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
 
-    .project-img {
-      height: 17rem;
-    }
+  .project-img {
+    height: 17rem;
+  }
 
-    .projects-code-title {
-      font-size: 1.6rem;
-    }
+  .projects-code-title {
+    font-size: 1.6rem;
+  }
 
-    .projects-code-img {
-      height: 4rem;
-    }
+  .projects-code-img {
+    height: 4rem;
+  }
 
-    .projects-code-name {
-      font-size: 1.1rem;
-    }
+  .projects-code-name {
+    font-size: 1.1rem;
+  }
 
-    .btn,
-    .btn:link,
-    .btn:visited,
-    .btn:hover,
-    .btn:active {
-      font-size: 1.4rem;
-    }
+  .btn,
+  .btn:link,
+  .btn:visited,
+  .btn:hover,
+  .btn:active {
+    font-size: 1.4rem;
+  }
 
-    .hero-container {
-      margin-top: 5rem;
-    }
+  .hero-container {
+    margin-top: 5rem;
   }
 }
