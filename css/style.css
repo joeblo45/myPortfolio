@@ -140,24 +140,53 @@ h1 {
 
 /***** ABOUT *****/
 .section-about {
+  margin-bottom: 20rem;
 }
 .about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.about-img img {
+  height: 30rem;
 }
 /***** SERVICES *****/
 .section-services {
+  margin-bottom: 20rem;
 }
 
 .services-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
 }
 
-.services-box {
-  background-color: red;
-  display: grid;
+/* .services-header {
+  background-color: #fff;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 4fr;
-  border: 1px solid #1a1a1a;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  padding: 2rem;
+  height: 15rem;
+} */
+
+.services-box {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  padding: 2rem;
+  height: 15rem;
 }
 
 .services-title {
@@ -165,8 +194,140 @@ h1 {
 }
 
 .img-1 {
+  height: 9rem;
+}
+.img-2 {
   height: 10rem;
 }
+.img-3 {
+  height: 12rem;
+}
+
+.img-4 {
+  height: 10rem;
+}
+
+.arrow-down {
+  width: 3rem;
+}
+/* ACCORDION */
+.accordion {
+  /* max-width: 30rem;
+  width: 30rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+
+.accordion-header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+  padding: 2rem;
+  height: 15rem;
+
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+}
+
+.accordion-button {
+  border: none;
+  background: none;
+  /* font-size: 0.5rem; */
+  color: #666;
+  cursor: pointer;
+}
+
+.accordion-content {
+  /* max-height: 0;
+  overflow: scroll;
+  padding: 2rem 3rem 2rem 5rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  display: none;
+  width: 80rem;
+  transition: max-height 1s ease-out; */
+  max-height: 0;
+  background-color: #fff;
+  padding: 8rem 5rem 5rem 5rem;
+  /* height: 50rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: max-height 1s ease-out;
+}
+
+.accordion-content--expanded {
+  max-height: 100vh;
+  display: inline-block;
+  position: relative;
+  border-radius: 2rem;
+  margin-top: -3rem;
+  z-index: -1;
+  transition: max-height 1s ease-in;
+}
+
+.accordion-item[aria-expanded="true"] .accordion-content {
+  max-height: 100vh;
+  transition: max-height 0.9s ease-in;
+}
+
+.accordion-content--expanded ul {
+  margin-top: 2.5rem;
+}
+
+.accordion-content p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.accordion-button {
+  font-size: 3rem;
+}
+
+.accordion .acccordion-item.active .accordion-header i {
+  transform: rotate(180deg);
+  transition: transform 0.2s 1.2s;
+}
+
+/* .accordion .accordion-item {
+  cursor: pointer;
+} */
+
+/* .accordion .accordion-item.active .accordion-content {
+  display: block;
+} */
+/* .arrow-up {
+  display: none;
+} */
+
+/* .accordion .accordion-item .accordion-header::after {
+  content: "⌄";
+  font-size: 4rem;
+  margin-top: -2.2rem;
+  color: #616161;
+}
+
+.accordion
+  .accordion-item
+  .aria-expanded
+  .accordion-header
+  .accordion-content--expanded::after {
+  content: "˄";
+} */
 
 /***** PROJECTS-SECTION *****/
 .section-projects {
@@ -227,4 +388,32 @@ h1 {
 .projects-code-name {
   text-align: center;
   font-size: 1.4rem;
+}
+
+/***** FOOTER *****/
+.footer-bar {
+  height: 5rem;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10rem 0 10rem;
+  position: relative;
+  width: ;
+}
+
+.footer-copyright {
+  color: #f7f7f7;
+  font-size: 1.4rem;
+}
+
+.footer-author {
+  color: #f7f7f7;
+  font-size: 1.4rem;
+}
+
+.footer-author-name {
+  color: #f7f7f7;
+  font-size: 1.4rem;
+  text-decoration: none;
 }

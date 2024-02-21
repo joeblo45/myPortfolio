@@ -70,4 +70,54 @@
   .hero-container {
     margin-top: 5rem;
   }
+
+  .footer-author {
+    display: none;
+  }
+
+  .footer-bar {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordion {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .accordion-content {
+    padding: 8rem 3rem 5rem 3rem;
+  }
+
+  .container {
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    /* padding: 0rem 1rem 0rem 1rem; */
+  }
+
+  .services-title {
+    font-size: 1.4rem;
+  }
+
+  .img-1 {
+    height: 7rem;
+  }
+
+  .img-2 {
+    height: 8rem;
+  }
+
+  .img-3 {
+    height: 10rem;
+  }
+
+  .img-4 {
+    height: 8rem;
+  }
 }

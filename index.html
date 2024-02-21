@@ -6,6 +6,7 @@
     <title>joeblo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -51,20 +52,25 @@
 
       <section class="section-about">
         <div class="container">
-          <div class="about-container heading-layout">
+          <div class="container-wide heading-layout">
             <div><h2 class="heading-secondary">About</h2></div>
             <div class="underline">.</div>
           </div>
+          <div class="about-container container">
           <div class="about-text">
             <p>
               Hey there! My name is Jonathan, but you can call me Joe it's fine.
               I'm a Front-End Web Developer and social marketer based in
               Montreal. I love to wake up in the morning, get the blood flowing
               at the gym, then sit down at my computer and design wonderful
-              websites.
+              websites. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam consectetur culpa odio, vel nam eligendi eos, magni reprehenderit ipsum atque quam assumenda labore, tenetur qui nisi unde voluptas earum dolore.
             </p>
           </div>
+          <div class="about-img">
+            <img src="img/header.png">
+          </div>
         </div>
+      </div>
       </section>
 
       <section class="section-services">
@@ -72,26 +78,84 @@
           <div><h2 class="heading-secondary">Services</h2></div>
           <div class="underline">.</div>
           </div>
-        <div class="services-container container">
-          <div class="services-box">
+        <div class="accordion container">
+    
+          <div class="accordion-item">
+          <div class="accordion-header">
             <div class="services-img">
               <img src="img/website-design.png" class="img-1" alt="website development">
             </div>
             <div class="services-title">
               <h3>Website Development</h3>
             </div>
-            <div class="services-description"></div>
+            <div class="services-arrow">
+              <button class="accordion-button" aria-expanded="false" aria-controls="section1Content">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
           </div>
-          <div class="services-box">
+          <div class="accordion-content" id="section1Content">
+            <p>Having an online page where people can get more information about your services and even interact with it is essentiel to your business. Save time & effort by having a custom website made by our designer.</p>
+          </div>
+          </div>
+        
+          <div class="accordion-item">
+            <div class="accordion-header">
             <div class="services-img">
-              <img src="img/header.png" class="img-1" alt="website development">
+              <img src="img/website-redesign.png" class="img-2" alt="website redesign">
             </div>
             <div class="services-title">
-              <h3>Website Development</h3>
+              <h3>Website Redesign</h3>
+            </div>
+            <div class="services-arrow">
+              <button class="accordion-button" aria-expanded="false" aria-controls="section2Content">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+            </div>
+            <div class="accordion-content" id="section2Content">
+              <p>Your website needs a facelift? Our team can help you rebuild your website from scratch and give it a more modern look.</p>
             </div>
           </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+            <div class="services-img">
+              <img src="img/google-business-profile.png" class="img-3" alt="google business profile">
+            </div>
+            <div class="services-title">
+              <h3>Google Business Profile</h3>
+            </div>
+            <div class="services-arrow">
+              <button class="accordion-button" aria-expanded="false" aria-controls="section3Content">
+                <i class="fas fa-angle-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="accordion-content" id="section3Content">
+            <p>Your website needs a facelift? Our team can help you rebuild your website from scratch and give it a more modern look.</p>
+          </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+            <div class="services-img">
+              <img src="img/workplace-integration.png" class="img-4" alt="google business profile">
+            </div>
+            <div class="services-title">
+              <h3>Workspace Integration</h3>
+            </div>
+            <div class="services-arrow">
+              <button class="accordion-button" aria-expanded="false" aria-controls="section4Content">
+                <i class="fas fa-angle-down"></i>
+          </button>
+          </div>
         </div>
-      </div>
+        <div class="accordion-content" id="section4Content">
+          <p>Your website needs a facelift? Our team can help you rebuild your website from scratch and give it a more modern look.</p>
+        </div>
+        </div>
+        </div>
       </section>
 
       <section class="section-projects" id="projects">
@@ -224,5 +288,17 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-bar">
+        <div class="footer-copyright">
+          Copyright © 2024 Start-me-Up, All rights reserved.
+        </div>
+        <div class="footer-author">
+          Website made by
+          <a href="#" class="footer-author-name">Jonathan Ethier</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/script.js"></script>
   </body>
 </html>
