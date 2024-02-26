@@ -252,7 +252,7 @@ h1 {
   align-items: baseline;
   margin-top: 1.5rem;
   gap: 1.5rem;
-  width: 75rem;
+  /* width: 75rem; */
 }
 
 .services-list-item {
@@ -264,7 +264,6 @@ h1 {
 }
 
 .services-list-icon {
-  width: 4rem;
   height: 4rem;
 }
 
